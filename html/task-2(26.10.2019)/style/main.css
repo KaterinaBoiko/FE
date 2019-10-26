@@ -1,0 +1,52 @@
+.content{
+    max-width: 80%;
+    margin: auto;
+}
+.tasks{
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+table, td, th{
+    border: 1px solid black;
+}
+table{
+    width: 400px;
+}
+.satellite{
+    padding: 0;
+    margin: 0;
+}
+h4{
+    margin: 0;
+}
+.lists{
+    display: flex;
+}
+.unordered{
+    flex-basis: 250px;
+}
+.ordered{
+    flex-basis: 250px;
+}
+
+.center{
+    text-align: center;
+}
+.square{
+    list-style-type: square;
+}
+.circle{
+    list-style-type: circle;
+}
+.none{
+    list-style-type: none;
+}
+.leading_zero{
+    list-style-type: decimal-leading-zero;
+}
+.ascii{
+    list-style-type: lower-latin;
+}
+.roman{
+    list-style-type: lower-roman;
+}
