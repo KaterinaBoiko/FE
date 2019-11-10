@@ -1,0 +1,202 @@
+body {
+    font-family: sans-serif;
+}
+
+.main-block {
+    background-color: rgb(61, 56, 56);
+    min-height: 470px;
+    max-width: 340px;
+    padding: 15px;
+}
+
+.card {
+    height: 470px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -15px 7px 5px rgb(20, 20, 20);
+    border-radius: 9%;
+}
+
+.cardtop {
+    position: relative;
+    background: linear-gradient(-45deg, rgb(163, 122, 68), 70%, rgb(245, 185, 106));
+    flex: 1;
+    border-top-left-radius: 9%;
+    border-top-right-radius: 9%;
+}
+
+.sneaker {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    height: 280px;
+    z-index: 1;
+}
+
+.logo {
+    width: 70px;
+    margin: 10px;
+}
+
+.cardbottom {
+    background-color: white;
+    flex: 1;
+    border-bottom-left-radius: 9%;
+    border-bottom-right-radius: 9%;
+    position: relative;
+}
+
+p {
+    padding: 0 0 3px 10px;
+    margin: 0;
+}
+
+.fast {
+    position: absolute;
+    font-size: 89px;
+    font-weight: 900;
+    bottom: -15px;
+    /* можна ж в такому одиничному випадку використати -15?) */
+    padding: 0;
+    color: rgba(223, 168, 96, 0.342);
+}
+
+.title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.cardbottom>.title {
+    padding-top: 20px;
+}
+
+.desc {
+    font-size: 12px;
+    padding-bottom: 0;
+}
+
+.new {
+    position: absolute;
+    color: white;
+    background-color: rgb(33, 202, 28);
+    padding: 4px 5px 2px 5px;
+    width: 23px;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 3px;
+    top: 12px;
+    right: 65px;
+}
+
+.stars {
+    padding-left: 10px;
+}
+
+i {
+    padding: 0;
+    margin: 0;
+}
+
+.charac {
+    font-weight: bold;
+    font-size: 10px;
+    padding-top: 15px;
+}
+
+p>span {
+    font-weight: 800;
+}
+
+label {
+    padding: 20px;
+    position: relative;
+}
+
+label input {
+    display: none;
+}
+
+label span {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    line-height: 2;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 15px;
+    left: 0;
+    cursor: pointer;
+}
+
+#colour label span {
+    width: 15px;
+    height: 15px;
+}
+
+.red {
+    background: rgb(240, 34, 34);
+}
+
+.green {
+    background: rgb(30, 207, 14);
+}
+
+.yellow {
+    background: rgb(255, 251, 5);
+}
+
+#size input:checked+span {
+    background: rgb(240, 34, 34);
+    color: white;
+}
+
+#colour {
+    padding-left: 20px;
+}
+
+#colour input:checked+span::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    bottom: -4px;
+    left: -4px;
+    border-radius: 100%;
+}
+
+#colour input:checked+.red::before {
+    border: 1.5px solid rgb(240, 34, 34);
+}
+
+#colour input:checked+.green::before {
+    border: 1.5px solid rgb(30, 207, 14);
+}
+
+#colour input:checked+.yellow::before {
+    border: 1.5px solid rgb(255, 251, 5);
+}
+
+
+fieldset {
+    border: none;
+}
+
+.price {
+    position: absolute;
+    color: white;
+    background-color: rgb(33, 202, 28);
+    padding: 5px 10px;
+    width: 120px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 3px;
+    top: 165px;
+    left: 130px;
+    box-shadow: 0 5px 10px rgba(34, 202, 28, 0.616);
+    cursor: pointer;
+}
+
+.price>span {
+    font-weight: bold;
+}
