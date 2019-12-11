@@ -1,3 +1,3 @@
 # FE
 
-https://katerinaboiko.github.io/FE/index.html
+https://katerinaboiko.github.io/FE/
