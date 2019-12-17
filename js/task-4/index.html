@@ -4,21 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <title>Play in try to guess</title>
-    <script src="./script/main.js"></script>
     <style>
-        body { 
+        body {
             padding-left: 30px;
         }
-       </style>
+
+        .flex {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        body>p {
+            text-align: center;
+        }
+
+        .disabled {
+            pointer-events: none;
+            opacity: 0.7;
+        }
+    </style>
 </head>
 
 <body>
-    <p>Hi!</p>
-    <p>It isn`t work now.</p>
-\    <input type="text" name="start" id="start" value="0">
-    <input type="text" name="end" id="end" value="100">
-    <button onclick="sort()">Sort</button><button onclick="document.location.reload()">Reset</button>
-    <p id="output" style="font-size: 25px;"></p>
+    <p>Here you can play in try to guess with computer.<br>
+        This is real battle betwen you and computer!<br>
+        Your turn is first. Write your variant on the left side and press "Try".</p>
+    <div class="flex">
+        <div class="user_guessing">
+            <p>So, try to guess what number from this interval the computer made.</p>
+            <input type="text" name="start" id="start" value="0" readonly>
+            <input type="text" name="end" id="end" value="100" readonly><br><br>
+            <input type="text" name="number" id="number" placeholder="Your number">
+            <p id="hint"></p>
+            <button onclick="guess()">Try</button>
+        </div>
+        <div class="computer_guesing">
+            <p>You should make a number from 0 to 100, computer will try to guess.</p>
+            <input type="text" name="start" id="compStart" value="0" readonly>
+            <input type="text" name="end" id="compEnd" value="100" readonly><br><br>
+            <input type="text" name="compNumber" id="compNumber" readonly>
+            <span>This is my variant! Am I right?</span>
+            <br><br>
+            <button onclick="less()">Less than mine</button>
+            <button onclick="more()">More than mine</button>
+            <button onclick="guessedUserNumber()">This is my number!</button>
+        </div>
+    </div>
+    <script src="./script/main.js"></script>
 </body>
 
 </html>
