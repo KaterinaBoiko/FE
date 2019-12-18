@@ -17,11 +17,11 @@ function guess() {
         attemptCount++;
         if (attempt > numberToGuess) {
             hint.innerHTML = "Your variant is more than the right number.";
-            end.value = attempt;
+            end.value = attempt-1;
         }
         else if (attempt < numberToGuess) {
             hint.innerHTML = "Your variant is less than the right number.";
-            start.value = attempt;
+            start.value = attempt+1;
         }
         else {
             alert(`Congratulation! You guessed it in ${attemptCount} attempts.`);
@@ -35,7 +35,7 @@ function guess() {
 
 function less(){
     compAttemptCount++;
-    compStart.value = compNumber.value;
+    compStart.value = compNumber.value + 1;
     max = parseInt(compEnd.value);
     min = parseInt(compStart.value);
     compNumber.value = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -46,7 +46,7 @@ function less(){
 
 function more(){
     compAttemptCount++;
-    compEnd.value = compNumber.value;
+    compEnd.value = compNumber.value - 1;
     max = parseInt(compEnd.value);
     min = parseInt(compStart.value);
     compNumber.value = Math.floor(Math.random() * (max - min + 1)) + min;

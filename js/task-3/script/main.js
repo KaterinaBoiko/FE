@@ -14,11 +14,11 @@ function guess() {
         console.log(attempt);
         if (attempt > numberToGuess) {
             hint.innerHTML = "Your variant is more than the right number.";
-            end.value = attempt;
+            end.value = attempt-1;
         }
         else if (attempt < numberToGuess) {
             hint.innerHTML = "Your variant is less than the right number.";
-            start.value = attempt;
+            start.value = attempt+1;
         }
         else {
             alert(`Congratulation! You guessed it in ${attemptCount} attempts.`);
