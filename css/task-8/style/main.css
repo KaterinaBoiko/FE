@@ -1,0 +1,359 @@
+@font-face {
+    font-family: "Headson";
+    src: url(../font/Headson.otf);
+    }
+.wrapper{
+    /* background-image: url("../images/back-big.png");
+    background-repeat:no-repeat; */
+    background: url(../images/back-big.png) no-repeat;
+    background-size:cover;
+    width: 768px; 
+    height: 563px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.left,
+.right{
+    margin-top: 55px;
+    height: 410px;
+    width: 308px;
+}
+.left{
+    background: url(../images/bg_item.png) no-repeat;
+    background-size:cover;
+}
+.right{
+    background: url(../images/bg_item-right.png) no-repeat;
+    background-size:cover;
+}
+.input{
+    font-family: 'Headson', Arial, sans-serif;
+    border: 1.5px solid #fff;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    height: 18px;
+    width: 168px;
+    margin: 3px 14px 0 70px;
+    display: flex;
+    align-items: center;
+}
+.input img{
+    height: 90%;
+    border: 1.5px solid #fff;
+}
+.money{
+    margin-top: 23px;
+}
+.money p{
+    color: white;
+    margin: 0;
+    display: inline-block;
+    padding-left: 60px;
+}
+.gold_max p{
+    color: white;
+    margin: 0;
+    padding-left: 30px;
+}
+.left .grid{
+    /* background-color: #fff; */
+    height: 273px;
+    margin: 11px 14px 0 16px;
+    display: grid;
+    border: 1px solid #000;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+.left .grid div{
+    border: 2px solid rgb(226, 216, 216);
+    border-style: ridge;
+}
+.cube{
+    background: url(../images/cube.png) no-repeat;
+    background-size:cover;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: rgba(1, 1, 53, 0.719);
+}
+.runa-branch{
+    background: url(../images/runa-branch.png) no-repeat;
+    background-size:cover;
+    background-color: rgba(1, 1, 53, 0.719);
+}
+.runa{
+    background: url(../images/runa.png) no-repeat;
+    background-size:cover;
+    background-color: rgba(1, 1, 53, 0.719);
+}
+.runa-fang{
+    background: url(../images/runa-fang.png) no-repeat;
+    background-size:cover;
+    background-color: rgba(1, 1, 53, 0.719);
+}
+.runa-fire{
+    background: url(../images/runa-fire.png) no-repeat;
+    background-size:cover;
+    background-color: rgba(1, 1, 53, 0.719);
+}
+.runa-pear{
+    background: url(../images/runa-pear.png) no-repeat;
+    background-size:cover;
+    background-color: rgba(1, 1, 53, 0.719);
+}
+.runa-time{
+    background: url(../images/runa-time.png) no-repeat;
+    background-size:cover;
+    background-color: rgba(1, 1, 53, 0.719);
+}
+.runa-cristall{
+    background: url(../images/runa-cristall.png) no-repeat;
+    background-size:cover;
+    background-color: rgba(1, 1, 53, 0.719);
+}
+.orange-ring{
+    background: url(../images/orange-ring.png) no-repeat;
+    background-size:contain;
+    background-position: center;
+    background-color: rgba(1, 1, 53, 0.719);
+}
+.blue-cristall{
+    background: url(../images/blue-cristall.png) no-repeat;
+    background-size:contain;
+    background-position: center;
+    background-color: rgba(1, 1, 53, 0.719);
+}
+.violet-cristall{
+    background: url(../images/violet-cristall.png) no-repeat;
+    background-size:contain;
+    background-position: center;
+    background-color: rgba(1, 1, 53, 0.719);
+}
+.white-cristall{
+    background: url(../images/white-cristall.png) no-repeat;
+    background-size:contain;
+    background-position: center;
+    background-color: rgba(1, 1, 53, 0.719);
+}
+.or-cristall{
+    background: url(../images/or-cristall.png) no-repeat;
+    background-size:contain;
+    background-position: center;
+    background-color: rgba(1, 1, 53, 0.719);
+}
+.skull{
+    background: url(../images/skull.png) no-repeat;
+    background-size:contain;
+    background-position: center;
+    background-color: rgba(1, 1, 53, 0.719);
+}
+.skull-broken{
+    background: url(../images/skull-broken.png) no-repeat;
+    background-size:contain;
+    background-position: center;
+    background-color: rgba(1, 1, 53, 0.719);
+}
+.cancel{
+    background: url(../images/gear-btn.png) no-repeat;
+    background-size:contain;
+    height: 32px;
+}
+.left .cancel{
+    margin: 11px 0 0 260px;
+}
+.top-flex{
+    padding-top: 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+}
+.numbers{
+    background: url(../images/numbers.png) no-repeat;
+    background-size:contain;
+    height: 22px;
+    width: 58px;
+}
+.belt{
+    background: url(../images/belt.png) no-repeat;
+    background-size:contain;
+    height: 58px;
+    width: 58px;
+}
+.coulomb{
+    background: url(../images/coulomb.png) no-repeat;
+    background-size:contain;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 85px;
+    border: 2px solid rgb(226, 216, 216);
+    border-style: ridge;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.719);
+}
+.center-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.armor{
+    background: url(../images/armor.png) no-repeat;
+    background-size:contain;
+    height: 85px;
+    width: 58px;
+}
+.sword{
+    background: url(../images/sword.png) no-repeat;
+    background-size:contain;
+    height: 109px;
+    width: 58px;
+    margin-top: -40px;
+}
+.bottom-flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-top: -14px;
+}
+.gloves{
+    background: url(../images/gloves.png) no-repeat;
+    background-size:contain;
+    height: 50px;
+    width: 50px;
+    margin-left: 15px;
+}
+.medal{
+    background: url(../images/medal.png) no-repeat;
+    background-size:contain;
+    height: 30px;
+    width: 30px;
+    border: 2px solid rgb(226, 216, 216);
+    border-style: ridge;
+    background-color: rgba(0, 0, 0, 0.719);
+}
+.crown{
+    background: url(../images/crown.jpg) no-repeat;
+    background-size:contain;
+    height: 30px;
+    width: 30px;
+}
+.decoration{
+    background: url(../images/decoration.png) no-repeat;
+    background-size:contain;
+    height: 30px;
+    width: 60px;
+}
+.shoes{
+    background: url(../images/shoes.png) no-repeat;
+    background-size:contain;
+    height: 50px;
+    width: 50px;
+    margin-right: 13px;
+}
+.right .grid{
+    /* background-color: #fff; */
+    height: 183px;
+    margin: 1px 15px 0 17px;
+    display: grid;
+    border: 1px solid #000;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+.right .grid div{
+    border: 2px solid rgb(226, 216, 216);
+    border-style: ridge;
+}
+.blue-book{
+    background: url(../images/blue-book.png) no-repeat;
+    background-size:contain;
+    background-position: center;
+    grid-column-start: 10;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: rgba(1, 1, 53, 0.719);
+}
+.gold-book{
+    background: url(../images/gold-book.png) no-repeat;
+    background-size:contain;
+    background-position: center;
+    grid-column-start: 10;
+    grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: rgba(1, 1, 53, 0.719);
+}
+.gold-ring{
+    background: url(../images/gold-ring.png) no-repeat;
+    background-size:contain;
+    grid-column-start: 10;
+    grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: rgba(1, 1, 53, 0.719);
+}
+.key{
+    background: url(../images/key.png) no-repeat;
+    background-size:contain;
+    background-position: center;
+    grid-column-start: 10;
+    grid-column-end: 10;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: rgba(1, 1, 53, 0.719);
+}
+.right .cancel{
+    margin-left:16px;
+    width: 30px;
+    display: inline-block;
+}
+.right .input{
+    background: url(../images/bg.png) no-repeat;
+    background-size:cover;
+    display: inline-block;
+    margin: 0 0 0 50px;
+    width: 100px;
+    position: relative;
+}
+.right i{
+    color: white;
+    position: absolute;
+    top: 1px;
+    left: 23px;
+}
+.alert{
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.836);
+    top: 165px;
+    left: 0;
+    width: 250px;
+}
+.right:hover + .alert{
+    display: block;
+}
+.alert p{
+    font-family: 'Headson', Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 0%;
+}
+p.yellow{
+    color: yellow;
+}
+p.violet{
+    color: rgb(91, 0, 165);
+}
+.bottom{
+    position: absolute;
+    height: 20px;
+    width: 30px;
+    bottom: 0;
+    /* background-color: blue; */
+}
+

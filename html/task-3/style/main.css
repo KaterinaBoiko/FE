@@ -1,0 +1,139 @@
+body{
+    margin-top: 0;
+    font-size: 18px;
+}
+.content {
+    max-width: 80%;
+    margin: auto;
+}
+
+.flexsection {
+    display: flex;
+} 
+
+header {
+    background-color: rgb(117, 170, 170);
+    height: 90px;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header span {
+    font-size: 50px;
+    font-family: 'Liu Jian Mao Cao', cursive;
+    padding-left: 10px;
+}
+
+header i{
+    padding-top: 15px;
+    padding-right: 3px;
+}
+
+aside {
+    flex: 1;
+}
+
+nav a {
+    display: block;
+    width: 92%;
+    padding: 10px;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    background-color: #d9dbe9;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #a5a6ad;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+main {
+    flex: 3;
+    background-color: rgba(164, 223, 203, 0.514);
+    padding-bottom: 60px;
+}
+
+main article
+{
+    padding: 10px 30px;
+}
+
+.bio{
+    text-align: center;
+}
+
+mark {
+    font-size: 1.1em;
+    font-weight: 900;
+    background: transparent;
+    font-family: 'Liu Jian Mao Cao', 'Times New Roman', Times, serif;
+}
+
+footer {
+    color: white;
+    background: #34495e;
+    padding: 4px;
+    padding-left: 20px;
+    font-size: 17px;
+    flex: auto;
+}
+.radiosong{
+    float: left;
+}
+table{
+    width: 90%;
+    margin: auto;
+    border: 4px double black; /* Рамка вокруг таблицы */
+    border-collapse: collapse; 
+    text-align: center;
+}
+td{
+    border: 1px solid black; 
+}
+.left{
+    text-align: left;
+}
+.caption{
+    font-size: 25px;
+    font-family: 'Liu Jian Mao Cao', cursive;
+    text-align: center;
+}
+.video{
+    width: 90%;
+    margin: auto;
+    height: 400px;
+    display: block;
+}
+audio{
+    width: 90%;
+    margin: auto;
+    display: block;
+    height: 30px;
+    margin-bottom: 30px;
+}
+blockquote{
+    margin-top: 0;
+    font-style: italic;
+}
+p{
+    padding-left: 10px;
+}
+form,
+progress{
+    display: block;
+    width: 400px;
+    margin: auto;
+}
+input{
+    width: 400px;
+}

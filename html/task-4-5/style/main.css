@@ -1,0 +1,339 @@
+body {
+    margin: 0;
+    font-size: 18px;
+    font-family: monospace;
+}
+
+.content {
+    max-width: 960px;
+    margin: auto;
+}
+
+.flexsection {
+    display: flex;
+}
+
+header {
+    background-color: rgb(117, 170, 170);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 100%;
+    max-width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 10%;
+    cursor: default;
+}
+
+.logo img {
+    height: 80%;
+}
+
+.logo span {
+    white-space: nowrap;
+}
+
+.text {
+    font-size: 200%;
+    font-family: Courier, monospace;
+    padding-left: 1%;
+    font-weight: bold;
+}
+
+nav>ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.main-menu>li,
+.sub-menu>li {
+    position: relative;
+}
+
+nav a,
+.sub-menu a {
+    line-height: 40px;
+    display: inline-block;
+    font-size: 100%;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+    padding: 10px 20px;
+}
+
+.sub-menu a {
+    width: 150px;
+    padding: 0;
+    border-bottom: 2px solid rgb(117, 170, 170);
+}
+
+nav a:hover {
+    background-color: rgb(127, 184, 184);
+}
+
+.sub-menu a:hover {
+    background-color: rgb(142, 204, 204);
+}
+
+.sub-menu,
+.sub-menu-2 {
+    position: absolute;
+    padding: 0;
+    top: 60px;
+    left: 0;
+    display: none;
+    z-index: 10;
+    background-color: white;
+}
+
+.sub-menu-2 {
+    top: 42px;
+    left: 80px;
+}
+
+li:hover .sub-menu,
+.sub-menu>li:hover .sub-menu-2 {
+    display: block;
+}
+
+main {
+    background-color: rgba(164, 223, 203, 0.212);
+    padding-bottom: 60px;
+    margin-left: 30px;
+}
+
+h1 {
+    font-size: 1.3em;
+    font-weight: 900;
+    font-family: Courier, monospace;
+    text-align: center;
+    margin: 15px;
+    padding-top: 20px;
+}
+
+.main-header {
+    margin: 10px 0;
+}
+
+.main-text {
+    text-align: center;
+}
+
+main article,
+p {
+    padding: 10px 30px;
+}
+
+#slider {
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    30% {
+        left: 0;
+    }
+
+    33% {
+        left: -100%;
+    }
+
+    63% {
+        left: -100%;
+    }
+
+    66% {
+        left: -200%;
+    }
+
+    95% {
+        left: -200%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+#slider figure {
+    width: 300%;
+    position: relative;
+    animation: 9s slider infinite;
+    margin-left: 0;
+}
+
+#slider figure:hover {
+    animation-play-state: paused;
+}
+
+#slider figure img {
+    width: 33.333333333%;
+    height: 100%;
+    float: left;
+    margin-left: 0;
+}
+
+.bio {
+    text-align: center;
+}
+
+mark {
+    font-size: 1.1em;
+    font-weight: 900;
+    background: transparent;
+    font-family: Courier, monospace;
+}
+
+summary {
+    font-family: Courier, monospace;
+    font-weight: 900;
+}
+
+.flexstructure {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.flexstructure>div {
+    width: 25%;
+    height: max-content;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.flexstructure>div:hover {
+    transform: scale(1.4);
+    background-color: #34495e;
+    color: white;
+}
+
+.flexdiv p {
+    text-align: center;
+    font-size: 70%;
+    margin: auto;
+    font-weight: bold;
+}
+
+.flexdiv .details {
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.flexdiv img {
+    height: 300px;
+    display: block;
+    margin: auto;
+}
+
+.info {
+    height: fit-content;
+}
+
+.radiosong {
+    float: left;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+    border: 4px double black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td {
+    border: 1px solid black;
+}
+
+.left {
+    text-align: left;
+}
+
+.caption {
+    font-size: 25px;
+    font-family: 'Liu Jian Mao Cao', cursive;
+    text-align: center;
+}
+
+.video {
+    width: 90%;
+    margin: auto;
+    height: 400px;
+    display: block;
+}
+
+audio {
+    width: 90%;
+    margin: auto;
+    display: block;
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+blockquote {
+    margin-top: 0;
+    font-style: italic;
+}
+
+form,
+progress {
+    display: block;
+    width: 400px;
+    margin: auto;
+}
+
+input {
+    width: 400px;
+}
+
+footer {
+    color: white;
+    background: #34495e;
+    padding: 4px;
+    padding-left: 20px;
+    font-size: 17px;
+    flex: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.contacts>p,
+.creator>p,
+.map>p{
+    font-size: 19px;
+}
+footer p{
+    margin: 0;
+}
+.contact, footer a{
+    margin: 0;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+footer a{
+    display: block;
+    cursor: pointer;
+    padding: 3px 0;
+}
+.map{
+    height: 100%;
+}

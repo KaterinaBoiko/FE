@@ -1,0 +1,22 @@
+.content{
+    max-width: 80%;
+    margin: auto;
+}
+.link{
+    border: 1px solid rgb(109, 105, 105);
+    padding: 5px;
+    display: inline-block;
+    margin: 10px 0 10px 50px;
+    background: linear-gradient(to bottom, #fefcea, #adaba5);
+}
+a{
+    color: black;
+    text-decoration: none; 
+}
+h1,h2{
+    text-align: center;
+}
+p{
+    text-indent: 2em;
+    text-align: justify;
+}
